@@ -1,0 +1,48 @@
+.teacher {
+  background-image: url(../img/teacherbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 90px 0 40px;
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  &__p {
+    text-align: center;
+    font-size: 16px;
+  }
+  &__contents {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &-box {
+      text-align: center;
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+       width: calc((100% - 60px) / 3);
+       .detail{
+        padding: 40px;
+       border: 3px solid #fff;
+       height: 385px;
+       }
+      
+      img {
+        border-radius: 50%;
+        position: relative;
+        top: 30px;
+      }
+    }
+    @include mq('sp'){
+      flex-direction: column;
+      &-box{
+        width: 100%;
+      }
+    }
+  }
+}

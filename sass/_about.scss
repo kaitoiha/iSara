@@ -1,0 +1,42 @@
+.about {
+  position: relative;
+  background-color: $yellow2;
+  h2 {
+    margin: 0 auto 50px;
+  }
+  p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 40px;
+  }
+  &__skill {
+    width: 1170px;
+    max-width: calc(100% - 40px);
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px solid #ebb94d;
+    border-radius: 5px;
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      .skill-box {
+        width: 130px;
+        text-align: center;
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0px;
+        }
+        p {
+          margin-top: 10px;
+          font-size: 12px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

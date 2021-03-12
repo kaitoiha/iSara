@@ -1,0 +1,63 @@
+// アンダーライン
+.underline{
+  background: linear-gradient(transparent 70%, #ebb94d 70%);
+  font-weight: bold;
+}
+// カギカッコ
+.braces{
+  position: relative;
+  text-align: center;
+  max-width: 860px;
+  padding: 35px 0;
+  margin: 0 auto;
+  font-size: 28px;
+  font-weight: bold;
+  @include mq('tab'){
+    font-size: 24px;
+  }
+  @include mq('sp'){
+    font-size: 18px;
+  }
+
+&::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-top: 4px solid #EBB94D;
+  border-left: 4px solid #EBB94D;
+}
+
+&::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-bottom: 4px solid #EBB94D;
+  border-right: 4px solid #EBB94D;
+}
+}
+// タイトル
+
+// バックグラウンド
+.bc-yellow {
+  background-color: $yellow;
+}
+.bc-yellow2 {
+  background-color: $yellow2;
+}
+// ボタン
+.btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: #da6b64;
+  border-radius: 25px;
+  text-decoration: none;
+  &:hover{
+    background-color: #d84940;
+  }
+}

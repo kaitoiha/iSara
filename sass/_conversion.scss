@@ -1,0 +1,82 @@
+.conversion {
+  text-align: center;
+  .texm {
+    font-size: 20px;
+    color: #fff;
+    p {
+      margin-bottom: 15px;
+    }
+    code {
+      padding: 2px 4px;
+      font-size: 90%;
+      color: #c7254e;
+      font-weight: bold;
+      background-color: #f9f2f4;
+      border-radius: 4px;
+    }
+    .big-btn {
+      max-width: 1120px;
+      margin: 0 auto;
+      @include mq("tab") {
+        margin: 0 2%;
+      }
+      a {
+        padding: 30px 120px;
+        max-width: 1028px;
+        margin: 50px auto;
+        display: block;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  .tex {
+    p {
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 26px;
+      }
+      @include mq("sp") {
+        display: none;
+      }
+    }
+  }
+  .hyde-tex {
+    display: none;
+    p {
+      font-size: 15px;
+      margin-bottom: 20px;
+      color: #fff;
+      &:last-child {
+        margin-bottom: 16px;
+      }
+    }
+    @include mq("sp") {
+      display: block;
+    }
+  }
+  .sns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      margin-right: 7px;
+      padding: 3px;
+      border-radius: 4px;
+      background-color: #385898;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+    .twitter {
+      background-color: #1b95e0;
+    }
+  }
+}

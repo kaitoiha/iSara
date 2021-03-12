@@ -1,0 +1,31 @@
+.introduction {
+  background-image: url(../img/introbottom.jpg);
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  .b{
+    display: none;
+  }
+  @include mq("sp") {
+    min-height: 770px;
+    .a {
+      display: none;
+    }
+    .b{
+      display: block;
+    }
+  }
+  h2{
+    margin: 40px auto 50px;
+  }
+  p{
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.7;
+    @include mq("sp"){
+      font-size: 16px;
+    }
+  }
+}
