@@ -1,0 +1,32 @@
+.learn{
+  text-align: center;
+  padding: 70px 0 50px;
+  h2{
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+  .learn__p{
+    font-size: 20px;
+    margin-bottom: 46px;
+  }
+  .learns{
+    width: 100%;
+    img{
+    margin-right: 40px;
+    margin-bottom: 40px;
+    &:last-child{
+      margin-right: 0px;
+    }
+    width: 180px;
+    @include mq(tab){
+      width: 140px;
+    }
+    @include mq('sp'){
+      width: 80px;
+    }
+  }
+  }
+  p{
+    font-size: 16px;
+  }
+}

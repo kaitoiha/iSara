@@ -1,0 +1,106 @@
+.merit {
+  background-color: $yellow2;
+  padding: 40px 0 50px;
+  &__ttl {
+    margin-bottom: 40px;
+  }
+  &__p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__h2 {
+    font-weight: bold;
+  }
+  .merits {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+    @include mq(sp) {
+      flex-direction: column;
+    }
+    &__item {
+      width: calc((100% - 60px) / 3);
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0px;
+      }
+      img {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+      &-p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      &-txt {
+        font-size: 16px;
+        color: #333;
+      }
+      @include mq(sp) {
+        width: 100%;
+        text-align: center;
+        &-p{
+          text-align: center;
+          font-size: 16px;
+        }
+        img{
+          height: 150px;
+        }
+        &-txt{
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .support{
+    border: 2px solid $yellow;
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    .c-y{
+      font-size: 28px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    .su-p{
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    p{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    @include mq(sp){
+      padding: 30px;
+      .c-y{
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+      .c-y{
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+  p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    @include mq(tab){
+      font-size: 14px;
+    }
+    @include mq(sp){
+      font-size: 12px;
+    }
+  }
+}

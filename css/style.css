@@ -770,3 +770,193 @@ a {
     padding: 20px;
   }
 }
+
+.learn {
+  text-align: center;
+  padding: 70px 0 50px;
+}
+
+.learn h2 {
+  font-size: 28px;
+  margin-bottom: 60px;
+}
+
+.learn .learn__p {
+  font-size: 20px;
+  margin-bottom: 46px;
+}
+
+.learn .learns {
+  width: 100%;
+}
+
+.learn .learns img {
+  margin-right: 40px;
+  margin-bottom: 40px;
+  width: 180px;
+}
+
+.learn .learns img:last-child {
+  margin-right: 0px;
+}
+
+@media (max-width: 1217px) {
+  .learn .learns img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 767px) {
+  .learn .learns img {
+    width: 80px;
+  }
+}
+
+.learn p {
+  font-size: 16px;
+}
+
+.merit {
+  background-color: #fef5e0;
+  padding: 40px 0 50px;
+}
+
+.merit__ttl {
+  margin-bottom: 40px;
+}
+
+.merit__p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.merit__h2 {
+  font-weight: bold;
+}
+
+.merit .merits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .merit .merits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.merit .merits__item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+
+.merit .merits__item:last-child {
+  margin-right: 0px;
+}
+
+.merit .merits__item img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.merit .merits__item-p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.merit .merits__item-txt {
+  font-size: 16px;
+  color: #333;
+}
+
+@media (max-width: 767px) {
+  .merit .merits__item {
+    width: 100%;
+    text-align: center;
+  }
+  .merit .merits__item-p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .merit .merits__item img {
+    height: 150px;
+  }
+  .merit .merits__item-txt {
+    margin-bottom: 20px;
+  }
+}
+
+.merit .support {
+  border: 2px solid #ebb94d;
+  background-color: #fff;
+  padding: 50px;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.merit .support .c-y {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.merit .support .su-p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.merit .support p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .merit .support {
+    padding: 30px;
+  }
+  .merit .support .c-y {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .merit .support .c-y {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .merit .support p {
+    font-size: 12px;
+  }
+}
+
+.merit p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1217px) {
+  .merit p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .merit p {
+    font-size: 12px;
+  }
+}
