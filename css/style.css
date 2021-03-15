@@ -1,6 +1,6 @@
 .sec {
   padding-top: 70px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 767px) {
@@ -47,6 +47,10 @@
   .hidden-sp {
     display: none;
   }
+}
+
+a {
+  color: red;
 }
 
 /*==========================
@@ -108,6 +112,10 @@
 
 .bc-yellow2 {
   background-color: #fef5e0;
+}
+
+.c-y {
+  color: #ebb94d;
 }
 
 .btn {
@@ -453,6 +461,7 @@
 .about {
   position: relative;
   background-color: #fef5e0;
+  padding-bottom: 60px;
 }
 
 .about h2 {
@@ -507,6 +516,35 @@
   font-weight: 300;
 }
 
+.about-circle {
+  text-align: center;
+  background-color: #fef5e0;
+}
+
+.about-circle p {
+  position: relative;
+  top: -40px;
+  color: #fff;
+  background-color: #ebb94d;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@media (max-width: 767px) {
+  .about-circle p {
+    top: -30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px;
+  }
+}
+
 .teacher {
   background-image: url(../img/teacherbg.jpg);
   background-repeat: no-repeat;
@@ -556,13 +594,20 @@
   height: 385px;
 }
 
+.teacher__contents-box .detail p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
 .teacher__contents-box img {
   border-radius: 50%;
   position: relative;
   top: 30px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1217px) {
   .teacher__contents {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -571,5 +616,157 @@
   }
   .teacher__contents-box {
     width: 100%;
+  }
+  .teacher__contents-box .detail {
+    width: 95%;
+    margin: 0 auto;
+    height: 240px;
+  }
+  .teacher__contents-box .detail p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 1217px) and (max-width: 767px) {
+  .teacher__contents-box .detail p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+.about-second {
+  background-image: url(../img/aboutsecondbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.about-second h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 34px;
+  font-weight: bold;
+}
+
+.about-second p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 1217px) {
+  .about-second h2 {
+    font-size: 26px;
+  }
+  .about-second p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-second h2 {
+    font-size: 20px;
+  }
+  .about-second p {
+    font-size: 14px;
+  }
+}
+
+.about-second .steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.about-second .steps .step {
+  background-color: #fff;
+  padding: 30px;
+  margin-right: 20px;
+  border-radius: 5px;
+  width: calc((100% - 40px)/3);
+}
+
+.about-second .steps .step:last-child {
+  margin-right: 0px;
+}
+
+.about-second .steps .step p {
+  color: #000;
+  font-size: 16px;
+}
+
+.about-second .steps .step .step-y {
+  font-size: 16px;
+  color: #fff;
+  background-color: #ebb94d;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+@media (max-width: 1217px) {
+  .about-second .steps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-second .steps .step {
+    margin: 0 0 20px 0;
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-second .steps .step {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+  }
+  .about-second .steps .step p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .about-second .steps .step .step-y {
+    font-size: 14px;
+    color: #fff;
+    background-color: #ebb94d;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 10px;
+  }
+}
+
+.about-third {
+  background-color: #036ea9;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+@media (max-width: 1217px) {
+  .about-third {
+    font-size: 16px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-third {
+    font-size: 14px;
+    padding: 20px;
   }
 }

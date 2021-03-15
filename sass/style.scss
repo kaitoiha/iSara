@@ -68,7 +68,7 @@ $breakpoints: (
 
 .sec{
   padding-top: 70px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 
   @include mq('sp') {
     padding-top: 40px;
@@ -150,6 +150,9 @@ $breakpoints: (
 	}
 }
 
+a{
+  color: red;
+}
 
 /*==========================
         import
@@ -162,4 +165,5 @@ $breakpoints: (
 @import "_introduction.scss";
 @import "_about.scss";
 @import "_teacher.scss";
+@import "_about-second.scss";
 

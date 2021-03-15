@@ -1,6 +1,7 @@
 .about {
   position: relative;
   background-color: $yellow2;
+  padding-bottom: 60px;
   h2 {
     margin: 0 auto 50px;
   }
@@ -37,6 +38,30 @@
           font-weight: 300;
         }
       }
+    }
+  }
+}
+.about-circle {
+  text-align: center;
+  background-color: $yellow2;
+  p {
+    position: relative;
+    top: -40px;
+    color: #fff;
+    background-color: #ebb94d;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: normal;
+    @include mq("sp") {
+        top: -30px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 12px;
     }
   }
 }
